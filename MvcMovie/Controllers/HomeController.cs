@@ -7,6 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MvcMovie.Models;
 
+
+//　処理を記述する
+
 namespace MvcMovie.Controllers
 {
     public class HomeController : Controller
@@ -18,7 +21,7 @@ namespace MvcMovie.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index()    // 最初に起動するところ
         {
             return View();
         }
